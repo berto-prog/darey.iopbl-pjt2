@@ -219,3 +219,25 @@ Your LEMP stack is now fully configured. In the next step, we’ll create a PHP 
 PREV
  ![Screenshot 2021-09-16 121934](https://user-images.githubusercontent.com/76639282/133715847-7bf444ec-3079-4ff3-a50a-56beea1155e1.png) 
   
+  ### STEP 5 – TESTING PHP WITH NGINX
+
+Your LEMP stack should now be completely set up.
+
+At this point, your LAMP stack is completely installed and fully operational.
+
+You can test it to validate that Nginx can correctly hand .php files off to your PHP processor.
+
+You can do this by creating a test PHP file in your document root. Open a new file called info.php within your document root in your text editor:
+
+sudo nano /var/www/projectLEMP/info.php
+Type or paste the following lines into the new file. This is valid PHP code that will return information about your server:
+
+<?php
+phpinfo();
+You can now access this page in your web browser by visiting the domain name or public IP address you’ve set up in your Nginx configuration file, followed by /info.php:
+
+http://`server_domain_or_IP`/info.php
+You will see a web page containing detailed information about your server:
+sudo rm /var/www/your_domain/info.php
+![Screenshot 2021-09-16 143937](https://user-images.githubusercontent.com/76639282/133716308-41997e22-daa9-48f8-9b0e-016bbdb483ea.png)
+  
